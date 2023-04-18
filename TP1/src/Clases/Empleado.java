@@ -1,10 +1,10 @@
-package Ejercicio1;
+package Clases;
 
 public class Empleado {
     public String nombre;
     public String apellido;
-    public int legajo;
-    public int aniosTrabajados;
+    public Integer legajo;
+    public Integer aniosTrabajados;
 
 
 
@@ -44,7 +44,7 @@ public class Empleado {
         this.apellido = apellido;
     }
 
-    public int getLegajo() {
+    public Integer getLegajo() {
         return legajo;
     }
 
@@ -52,7 +52,7 @@ public class Empleado {
         this.legajo = legajo;
     }
 
-    public int getAniosTrabajados() {
+    public Integer getAniosTrabajados() {
         return aniosTrabajados;
     }
 
