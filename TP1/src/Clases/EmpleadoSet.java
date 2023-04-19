@@ -4,7 +4,7 @@ public class EmpleadoSet extends Empleado {
 
     public EmpleadoSet() {}
 
-    public EmpleadoSet(String nombre, String apellido, int legajo, int aniosTrabajados) {
+    public EmpleadoSet(String nombre, String apellido, String legajo, int aniosTrabajados) {
         super(nombre, apellido, legajo, aniosTrabajados);
     }
 

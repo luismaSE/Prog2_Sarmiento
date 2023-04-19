@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a30790-cdbf-468d-ac81-864378c08536" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Empleado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/EmpleadoSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clases/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clases/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clases/EmpleadoSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clases/EmpleadoSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/luisma_se/Documentos/programacion_2/Prog2_Sarmiento/TP3/src/Clases/Ejercicio5",
+    "last_opened_file_path": "/home/luisma_se/Documentos/programacion_2/Prog2_Sarmiento/TP1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681311406692</updated>
       <workItem from="1681311407868" duration="11629000" />
+      <workItem from="1681916611347" duration="7506000" />
     </task>
     <servers />
   </component>

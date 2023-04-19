@@ -4,6 +4,7 @@ import Clases.*;
 import Clases.Ejercicio4.*;
 import Clases.Ejercicio5.*;
 import Interfaces.FiguraGeometrica;
+import Excepciones.EmpleadoException;
 
 
 
@@ -13,11 +14,11 @@ public class Main {
         System.out.println("\n\nEjercicio 1:");
 
         Set<Empleado> setEmpleados = new HashSet<>();
-        setEmpleados.add(new Empleado("Juan", "Perez", 1, 5));
-        setEmpleados.add(new Empleado("Luis", "Sarmiento", 2, 6));
-        setEmpleados.add(new Empleado("Sofia", "Esquembre", 3, 3));
-        setEmpleados.add(new Empleado("Luz", "Columna", 4, 5));
-        setEmpleados.add(new Empleado("Juan", "Perez", 1, 5));
+        setEmpleados.add(new Empleado("Juan", "Perez", "E1", 5));
+        setEmpleados.add(new Empleado("Luis", "Sarmiento","E2" , 6));
+        setEmpleados.add(new Empleado("Sofia", "Esquembre", "E3", 3));
+        setEmpleados.add(new Empleado("Luz", "Columna", "E4", 5));
+        setEmpleados.add(new Empleado("Juan", "Perez", "E5", 5));
 
         for (Empleado empleado : setEmpleados) {
             System.out.println(empleado);
@@ -25,11 +26,11 @@ public class Main {
         System.out.println("\n");
 
         Set<EmpleadoSet> setEmpleados2 = new HashSet<>();
-        setEmpleados2.add(new EmpleadoSet("Juan", "Perez", 1, 5));
-        setEmpleados2.add(new EmpleadoSet("Luis", "Sarmiento", 2, 6));
-        setEmpleados2.add(new EmpleadoSet("Sofia", "Esquembre", 3, 3));
-        setEmpleados2.add(new EmpleadoSet("Juan", "Perez", 1, 5));
-        setEmpleados2.add(new EmpleadoSet("Luz", "Columna", 4, 5));
+        setEmpleados2.add(new EmpleadoSet("Juan", "Perez", "E1", 5));
+        setEmpleados2.add(new EmpleadoSet("Luis", "Sarmiento", "E2", 6));
+        setEmpleados2.add(new EmpleadoSet("Sofia", "Esquembre", "E3", 3));
+        setEmpleados2.add(new EmpleadoSet("Juan", "Perez", "E4", 5));
+        setEmpleados2.add(new EmpleadoSet("Luz", "Columna", "E5", 5));
 
 
         for (EmpleadoSet empleado : setEmpleados2) {
@@ -56,7 +57,7 @@ public class Main {
 
         milista.removerConIndice(2);
 
-        System.out.println(milista.cantidadElementos());
+        System.out.println("Cantidad de elementos: "+milista.cantidadElementos());
         milista.desordenar();
         System.out.println(milista.devolverLista());
         milista.ordenar();
@@ -165,11 +166,11 @@ public class Main {
         System.out.println("\n\nEjercicio 6:");
 
         Set<Empleado> setEmpleados = new HashSet<>();
-        setEmpleados.add(new Empleado("Juan", "Perez", 1, 5));
-        setEmpleados.add(new Empleado("Luis", "Sarmiento", 2, 4));
-        setEmpleados.add(new Empleado("Sofia", "Esquembre", 3, 3));
-        setEmpleados.add(new Empleado("Luz", "Columna", 4, 5));
-        setEmpleados.add(new Empleado("Lucca", "Stella", 5, 2));
+        setEmpleados.add(new Empleado("Juan", "Perez", "E1", 5));
+        setEmpleados.add(new Empleado("Luis", "Sarmiento", "E2", 4));
+        setEmpleados.add(new Empleado("Sofia", "Esquembre", "E3", 3));
+        setEmpleados.add(new Empleado("Luz", "Columna", "E4", 5));
+        setEmpleados.add(new Empleado("Lucca", "Stella", "E5", 2));
 
         Map<String , Empleado> mapaEmpleado = new HashMap<>();
         for(Empleado empleado : setEmpleados) {
@@ -183,16 +184,35 @@ public class Main {
 
     public static void ejercicio7() {
         System.out.println("\n\nEjercicio 7:");
+        ArrayList<String> strList = new ArrayList<>();
+        strList.add("nombre=Pablo, apellido=Marquez, aniosTrabajados=10");
+        strList.add("nombre=Pablo, apellido=Marquez, legajo=E001, aniosTrabajados=0");
+        strList.add("nombre=Pablo, apellido=, legajo=E001, aniosTrabajados=10");
+        strList.add("nombre=Pablo, apellido=Marquez, legajo=E001, aniosTrabajados=tres");
+        strList.add("nombre=Pablo,apellido:Marquez,legajo=E001,aniosTrabajados=10");
+        strList.add("nombre=Pablo, apellido=Marquez, legajo=E001, aniosTrabajados=10");
+        strList.add("nombre=Pablo,apellido=Marquez,legajo=E001,aniosTrabajados=10");
+        strList.add("nombre=Pablo ,apellido=Marquez ,legajo=E001 ,aniosTrabajados=10");
 
+
+        for (String str : strList) {
+
+            try {
+                Empleado empleado = Empleado.crearEmpleado(str);
+                System.out.println(empleado);
+            } catch (EmpleadoException error) {
+                System.out.println(error);
+            }
+        }
     }
 
-
     public static void main(String[] args) {
-        //ejercicio1();
-        //ejercicio2();
-        //ejercicio3();
-        //ejercicio4();
-        //ejercicio5();
-        //ejercicio6();
+        ejercicio1();
+        ejercicio2();
+        ejercicio3();
+        ejercicio4();
+        ejercicio5();
+        ejercicio6();
+        ejercicio7();
     }
 }
