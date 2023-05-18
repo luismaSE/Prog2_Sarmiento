@@ -1,11 +1,10 @@
-package Clases;
+package Parte1.Clases;
 
 import java.util.List;
 
 public class Hilo2 extends Thread {
     protected String nombre;
     protected List<Integer> lista;
-
 
     public Hilo2(String nombre, List<Integer> lista) {
         this.nombre = nombre;

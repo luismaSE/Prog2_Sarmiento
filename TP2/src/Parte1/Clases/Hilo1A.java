@@ -1,4 +1,4 @@
-package Clases;
+package Parte1.Clases;
 
 import java.util.Random;
 

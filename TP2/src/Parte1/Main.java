@@ -1,6 +1,8 @@
-import Clases.Hilo1A;
-import  Clases.Hilo1B;
-import  Clases.Hilo2;
+package Parte1;
+
+import Parte1.Clases.Hilo1A;
+import  Parte1.Clases.Hilo1B;
+import  Parte1.Clases.Hilo2;
 
 import java.util.ArrayList;
 import java.util.List;

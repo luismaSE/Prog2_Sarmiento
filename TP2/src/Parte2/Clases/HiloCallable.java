@@ -1,21 +1,22 @@
-package Clases;
+package Parte2.Clases;
 
 import java.util.Random;
+import java.util.concurrent.Callable;
 
-public class Hilo1B implements Runnable {
-
+public class HiloCallable implements Callable {
     protected String nombre;
     protected Integer iteracion;
     protected Integer demora;
     private Random random = new Random();
 
-    public Hilo1B(String nombre, Integer iteracion, Integer demora) {
+    public HiloCallable(String nombre, Integer iteracion, Integer demora) {
         this.nombre = nombre;
         this.iteracion = iteracion;
         this.demora = demora;
     }
 
-    public  void run() {
+    @Override
+    public  Void call() {
         System.out.println("Soy el Hilo ("+nombre+")\nCantidad de iteraciones: "+iteracion+"\n Tiempo de demora: "+demora+"\n");
         for (int i = 0 ;  i < iteracion ; i++ ) {
 
@@ -26,6 +27,8 @@ public class Hilo1B implements Runnable {
                 e.printStackTrace();
             }
         }
+        return null;
     }
 
 }
+
