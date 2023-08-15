@@ -1,0 +1,9 @@
+server:
+  port: 8080
+luisma:
+  url: http://luisma.com
+  puerto: 8080
+  pers:
+    nombre: bruno
+    apellido: diaz
+    codigo: 1
